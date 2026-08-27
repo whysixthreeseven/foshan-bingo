@@ -1,0 +1,5 @@
+Генерирует изображение для игры в бинго (формат 3 на 3). Для генерации используется рандомно выбранные варианты из общего списка и (ограниченное) некоторое количество вариантов из перманентного списка.
+
+<img width="210" height="210" alt="f7da1ab372d675eaa201a0f5e2e29e42" src="https://github.com/user-attachments/assets/fd6514f0-bfab-443b-a3e7-3ade516473af" /> <img width="210" height="210" alt="d0914873183b1a962ab99fd45cf57182" src="https://github.com/user-attachments/assets/8e28ae6d-c15b-4e2e-abba-baa012297b5f" /> <img width="210" height="210" alt="46542d373f4b8077fc10724c117e3aaf" src="https://github.com/user-attachments/assets/0cac1357-542d-4f66-b141-f8beba7aad8c" />
+
+
