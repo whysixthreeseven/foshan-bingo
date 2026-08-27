@@ -2,7 +2,7 @@
 from PIL import Image, ImageDraw, ImageFont
 
 # Settings import:
-from settings import SETTINGS
+from app.settings import SETTINGS
 
 
 def create_card(bingo_text: str) -> Image:

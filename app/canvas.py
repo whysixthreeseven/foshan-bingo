@@ -1,20 +1,30 @@
+# Random library:
+import random
+
 # Pillow library annotations:
-from PIL import Image
+from PIL import Image, ImageColor
 
 # Settings instance:
-from settings import SETTINGS
+from app.settings import SETTINGS
 
 # Timestamp function:
-from timestamp import timestamp
+from app.scripts.timestamp import timestamp
 
 
-def create_canvas(bingo_card_list: list[Image.Image]) -> Image.Image:
+def create_canvas(bingo_card_list: list[Image.Image], random_bg: bool = True) -> Image.Image:
+    
+    # Selecting canvas color:
+    if random_bg:
+        canvas_color_list: tuple[str, ...] = tuple(color for color, _ in ImageColor.colormap.items())
+        canvas_color: str = random.choice(canvas_color_list)
+    else:
+        canvas_color: str = SETTINGS.CANVAS_BACKGROUND_COLOR
 
     # Creating canvas
     canvas_image = Image.new(
         mode = SETTINGS.RENDER_MODE,
         size = (SETTINGS.CANVAS_WIDHT, SETTINGS.CANVAS_HEIGHT),
-        color = SETTINGS.CAVNAS_BACKGROUND_COLOR
+        color = canvas_color
         )
 
     # Placing cards

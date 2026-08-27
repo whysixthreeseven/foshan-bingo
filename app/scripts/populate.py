@@ -2,8 +2,8 @@
 import random
 
 # Importing bingo option lists and settings:
-from list import RANDOM_OPTIONS, PERMANENT_OPTIONS
-from settings import SETTINGS
+from app.list import RANDOM_OPTIONS, PERMANENT_OPTIONS
+from app.settings import SETTINGS
 
 
 def __validate_param(validate_value: int) -> None:
