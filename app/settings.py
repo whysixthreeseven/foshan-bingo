@@ -1,9 +1,5 @@
 class __SETTINGS:
-    
-    # Options
-    BINGO_OPTIONS_PERMANENT: int = 2
-    BINGO_OPTIONS_COUNT: int = 9
-    
+        
     # Image settings:
     CARD_SIDE_LEN: int = 300
     CARD_MARGIN_MODIFIER: float = 0.04
@@ -14,6 +10,10 @@ class __SETTINGS:
     CARD_TEXT_COLOR: str = "black"
     CARD_FONT_NAME: str = "calibri.ttf"
     CARD_FONT_SIZE: int = 26
+    
+    # Options
+    BINGO_OPTIONS_PERMANENT: int = 2
+    BINGO_OPTIONS_COUNT: int = CARD_COUNT_PER_ROW * CARD_COUNT_PER_COLUMN
     
     # Canvas settings:
     CANVAS_BACKGROUND_COLOR: str = "black"
