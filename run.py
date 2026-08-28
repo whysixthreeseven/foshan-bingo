@@ -7,8 +7,8 @@ from app.scripts.populate import generate_options
 # Main entry function:
 def run():
     bingo_options: tuple[str, ...] = generate_options(
-        permanent_option_limit = 0,
-        ignore_assertion = True,
+        permanent_option_limit = 0,     # Currently max == 1
+        ignore_assertion = True,        # Ignore, unless recently edited list!
         )
     bing_card_list: list = [create_card(bingo_text = option) for option in bingo_options]
     create_canvas(
