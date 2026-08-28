@@ -11,7 +11,7 @@ from app.settings import SETTINGS
 from app.scripts.timestamp import timestamp
 
 
-def create_canvas(bingo_card_list: list[Image.Image], random_bg: bool = True) -> Image.Image:
+def create_canvas(bingo_card_list: list[Image.Image], random_bg: bool = False) -> Image.Image:
     
     # Selecting canvas color:
     if random_bg:
@@ -27,7 +27,7 @@ def create_canvas(bingo_card_list: list[Image.Image], random_bg: bool = True) ->
         color = canvas_color
         )
 
-    # Placing cards
+    # Placing cards:
     for index, card in enumerate(bingo_card_list):
         
         # Calculating positions:
@@ -46,7 +46,7 @@ def create_canvas(bingo_card_list: list[Image.Image], random_bg: bool = True) ->
         # Adding card to canvas image:
         canvas_image.paste(card, (coordinate_x, coordinate_y))
 
-    # Saving canvas image:
+    # Saving canvas image -> "NAME_YYYY_MM_DD_HH_MM_SS.png":
     canvas_filename: str = "{filename}_{timestamp}.{extension}".format(
         filename = SETTINGS.CANVAS_SAVE_FILENAME,
         timestamp = timestamp(),
