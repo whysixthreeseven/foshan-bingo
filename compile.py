@@ -18,8 +18,8 @@ CONFIGURATION = {
 def build():
     
     # Cleaning  old builds:
-    shutil.rmtree("build", ignore_errors=True)
-    shutil.rmtree("dist", ignore_errors=True)
+    shutil.rmtree("build", ignore_errors = True)
+    shutil.rmtree("dist", ignore_errors = True)
     
     # Creating build  command
     cmd = ["pyinstaller", "--onefile", "--name", CONFIGURATION["name"]]
