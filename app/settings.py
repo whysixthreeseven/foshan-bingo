@@ -4,8 +4,8 @@ class __SETTINGS:
     CARD_SIDE_LEN: int = 300
     CARD_MARGIN_MODIFIER: float = 0.04
     CARD_MARGIN_LEN: int = int(CARD_SIDE_LEN * CARD_MARGIN_MODIFIER)
-    CARD_COUNT_PER_ROW: int = 3
-    CARD_COUNT_PER_COLUMN: int = 3
+    CARD_COUNT_PER_ROW: int = 5
+    CARD_COUNT_PER_COLUMN: int = 5
     CARD_BACKGROUND_COLOR: str = "white"
     CARD_TEXT_COLOR: str = "black"
     CARD_FONT_NAME: str = "calibri.ttf"
