@@ -3,7 +3,7 @@
 A small bingo-card generator made for our Foshan WeChat group.
 
 The idea is simple: our group has recurring chat events and familiar
-patterns --- the same questions being asked again and again, people
+patterns — the same questions being asked again and again, people
 sharing or advertising places, and users repeating their usual routines.
 These bingo canvases are just for fun: generate a board, keep it handy,
 and strike off a square whenever something familiar happens.
@@ -33,7 +33,7 @@ versions choose a background color at random.
 3.  Keep the image available while chatting in the group.
 4.  Strike out a square whenever the corresponding familiar event
     happens.
-5.  Enjoy the bingo --- and keep it friendly.
+5.  Enjoy the bingo — and keep it friendly.
 
 The boards combine random options with permanent options. The exact
 squares depend on the options configured in the project.
