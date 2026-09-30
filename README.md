@@ -15,12 +15,12 @@ recurring "classics." It's all meant in good humor.
 
 The project includes four Windows executables:
 
-  Executable      Card layout         Background
-  --------------- ------------------- ----------------------------
-  `bingo3.exe`    3 × 3 bingo cards   Default black
-  `bingo3c.exe`   3 × 3 bingo cards   Random colorful background
-  `bingo5.exe`    5 × 5 bingo cards   Default black
-  `bingo5c.exe`   5 × 5 bingo cards   Random colorful background
+| Executable    | Card layout       | Background                      |
+| ------------- | ----------------- | ------------------------------- |
+| `bingo3.exe`  | 3 × 3 bingo cards | Default black                   |
+| `bingo3c.exe` | 3 × 3 bingo cards | Random colorful background      |
+| `bingo5.exe`  | 5 × 5 bingo cards | Default black                   |
+| `bingo5c.exe` | 5 × 5 bingo cards | Random colorful background      |
 
 The `c` suffix means **colorful background**. The default black
 background is intended to keep the canvas easy to read; the colorful
